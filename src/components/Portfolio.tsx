@@ -72,7 +72,7 @@ const Portfolio = () => {
               meaningfully to the tech community and to use technology to solve
               real-world challenges.
             </p>
-            <a href=""><button className="">Get resume</button></a>
+            <a href=""><button className="border px-4 bg-slate-300 mt-7 rounded-xl">Get resume</button></a>
           </div>
         </div>
 
@@ -80,37 +80,37 @@ const Portfolio = () => {
         <div className="flex items-center justify-center font-extrabold text-3xl">
             My Skills
           </div>
-          <div className="">
-            <div className="">
-              <img src={html} alt="" />
+          <div className="grid grid-cols-5 items-center gap-10 p-10 ml-20 ">
+            <div className=" items-center">
+              <img src={html} className= "w-[100px]" />
             </div>
-            <div className="">
-              <img src={css} alt="" />
+            <div className=" items-center">
+              <img src={css} className = "w-[100px]" />
             </div>
-            <div className="">
-              <img src={js} alt="" />
+            <div className=" items-center">
+              <img src={js} className = "w-[100px]" />
             </div>
-            <div className="">
-              <img src={git} alt="" />
+            <div className=" items-center">
+              <img src={git} className = "w-[100px]" />
             </div>
-            <div className="">
-              <img src={c} alt="" />
+            <div className=" items-center">
+              <img src={c} className = "w-[100px]" />
             </div>
-            <div className="">
-              <img src={node} alt="" />
+            <div className=" items-center">
+              <img src={node} className = "w-[100px]" />
             </div>
-            <div className="">
-              <img src={ts} alt="" />
+            <div className=" items-center">
+              <img src={ts} className = "w-[100px]" />
             </div>
-            <div className="">
-              <img src={sql} alt="" />
+            <div className=" items-center">
+              <img src={sql} className = "w-[100px]" />
             </div>
-            <div className="">
-              <img src={react} alt="" />
+            <div className=" items-center">
+              <img src={react} className = "w-[100px]" />
             </div>
-            <div className="">
-              <img src={twind} alt="" />
-            </div>
+            <div className=" items-center">
+              <img src={twind} className = "w-[100px]" />
+``            </div>
           </div>
         </div>
     </>
