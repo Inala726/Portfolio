@@ -1,15 +1,19 @@
 // import { useState } from "react";
-import { FaSquarespace } from "react-icons/fa";
-import html from '../assets/images/html.jpeg'
-import css from '../assets/images/css.jpeg'
-import js from '../assets/images/javascript-icon.png'
-import c from '../assets/images/C.jpeg'
-import git from '../assets/images/githublogo.jpeg'
-import node from '../assets/images/nodejs-icon.png'
-import ts from '../assets/images/typescript-icon.png'
-import sql from '../assets/images/sql.jpeg'
-import react from '../assets/images/react-icon.png'
-import twind from '../assets/images/tailwindcss-logo.png'
+import {  FaSquarespace } from "react-icons/fa";
+import html from "../assets/images/html.jpeg";
+import css from "../assets/images/css.jpeg";
+import js from "../assets/images/javascript-icon.png";
+import c from "../assets/images/C.jpeg";
+import git from "../assets/images/githublogo.jpeg";
+import node from "../assets/images/nodejs-icon.png";
+import ts from "../assets/images/typescript-icon.png";
+import sql from "../assets/images/sql.jpeg";
+import react from "../assets/images/react-icon.png";
+import twind from "../assets/images/tailwindcss-logo.png";
+import picture from '../assets/images/Screenshot (2).png'
+import image from '../assets/images/Screenshot (3).png'
+import { FaGithub, FaInstagram, FaLinkedin , FaXTwitter } from "react-icons/fa6";
+import { TiThMenu } from "react-icons/ti";
 
 // const [openSidebar, setOpenSidebar] = useState<boolean>(false)
 
@@ -35,10 +39,19 @@ const Portfolio = () => {
               <a href="#about">
                 <li>ABOUT</li>
               </a>
-              <li>SKILLS</li>
+              <a href="#skills">
+                <li>SKILLS</li>
+              </a>
+              <a href="#projects">
               <li>PROJECTS</li>
+              </a>
+              <a href="#contact">
               <li>CONTACT ME</li>
+              </a>
             </ul>
+          </div>
+          <div className="">
+            <TiThMenu size={25} className=""/>
           </div>
         </div>
         <div className="text flex gap-[30px] flex-col items-center justify-center mt-32 ">
@@ -47,72 +60,109 @@ const Portfolio = () => {
         </div>
       </div>
 
-      
-        <div id="about" className="w-[100%] mt-11 ">
-          <div className="flex items-center justify-center font-extrabold text-3xl">
-            About me
-          </div>
-          <div className="text-lg text-left p-10 leading-10">
-            <p>
-              My name is Inala. I am passionate about coding, finding joy in
-              solving complex problems and creating innovative solutions. Every
-              new programming language or project is an opportunity for growth
-              and creativity.
-            </p>
-            <p>
-              {" "}
-              Through coding, I aspire to make a positive impact and
-              continuously learn in this ever-evolving field. Beyond coding, I
-              enjoy collaborating with others on tech projects, sharing
-              knowledge, and exploring the latest technological advancements.
-            </p>
-            <p>
-              {" "}
-              My dedication to coding is driven by a desire to contribute
-              meaningfully to the tech community and to use technology to solve
-              real-world challenges.
-            </p>
-            <a href=""><button className="border px-4 bg-slate-300 mt-7 rounded-xl">Get resume</button></a>
-          </div>
-        </div>
-
-        <div className="">
+      <div id="about" className="w-[100%] mt-11 ">
         <div className="flex items-center justify-center font-extrabold text-3xl">
-            My Skills
+          About me
+        </div>
+        <div className="text-lg text-left p-10 leading-10">
+          <p>
+            My name is Inala. I am passionate about coding, finding joy in
+            solving complex problems and creating innovative solutions. Every
+            new programming language or project is an opportunity for growth and
+            creativity.
+          </p>
+          <p>
+            {" "}
+            Through coding, I aspire to make a positive impact and continuously
+            learn in this ever-evolving field. Beyond coding, I enjoy
+            collaborating with others on tech projects, sharing knowledge, and
+            exploring the latest technological advancements.
+          </p>
+          <p>
+            {" "}
+            My dedication to coding is driven by a desire to contribute
+            meaningfully to the tech community and to use technology to solve
+            real-world challenges.
+          </p>
+          <a href="">
+            <button className="border px-4 bg-slate-300 mt-7 rounded-xl">
+              Get resume
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div className="" id="skills">
+        <div className="flex items-center justify-center font-extrabold text-3xl">
+          My Skills
+        </div>
+        <div className="grid grid-cols-5 items-center gap-10 p-10 ml-20 ">
+          <div className=" items-center">
+            <img src={html} className="w-[100px]" />
           </div>
-          <div className="grid grid-cols-5 items-center gap-10 p-10 ml-20 ">
-            <div className=" items-center">
-              <img src={html} className= "w-[100px]" />
-            </div>
-            <div className=" items-center">
-              <img src={css} className = "w-[100px]" />
-            </div>
-            <div className=" items-center">
-              <img src={js} className = "w-[100px]" />
-            </div>
-            <div className=" items-center">
-              <img src={git} className = "w-[100px]" />
-            </div>
-            <div className=" items-center">
-              <img src={c} className = "w-[100px]" />
-            </div>
-            <div className=" items-center">
-              <img src={node} className = "w-[100px]" />
-            </div>
-            <div className=" items-center">
-              <img src={ts} className = "w-[100px]" />
-            </div>
-            <div className=" items-center">
-              <img src={sql} className = "w-[100px]" />
-            </div>
-            <div className=" items-center">
-              <img src={react} className = "w-[100px]" />
-            </div>
-            <div className=" items-center">
-              <img src={twind} className = "w-[100px]" />
-``            </div>
+          <div className=" items-center">
+            <img src={css} className="w-[100px]" />
+          </div>
+          <div className=" items-center">
+            <img src={js} className="w-[100px]" />
+          </div>
+          <div className=" items-center">
+            <img src={git} className="w-[100px]" />
+          </div>
+          <div className=" items-center">
+            <img src={c} className="w-[100px]" />
+          </div>
+          <div className=" items-center">
+            <img src={node} className="w-[100px]" />
+          </div>
+          <div className=" items-center">
+            <img src={ts} className="w-[100px]" />
+          </div>
+          <div className=" items-center">
+            <img src={sql} className="w-[100px]" />
+          </div>
+          <div className=" items-center">
+            <img src={react} className="w-[100px]" />
+          </div>
+          <div className=" items-center">
+            <img src={twind} className="w-[100px]" />
           </div>
         </div>
+      </div>
+      <div className="" id="projects">
+        <div className="flex items-center justify-center mt-6 mb-6 font-extrabold text-3xl">
+          My Projects
+        </div>
+        <div className="flex items-center justify-start p-10 gap-10">
+          <div className="w-[350px] h-[320px] border border-black p-1 rounded-lg">
+            <img src={picture} className="" />
+            <p className="mt-[5px] font-bold">ICONS8 CLONE</p>
+            <p>A well implemented clone of the icons8 website using HTML and CSS only</p>
+            <a href="https://icons8-green.vercel.app/" target="_blank"><button className="mt-[5px] border p-1 border-black">View website</button></a>
+          </div>
+          <div className="w-[350px] h-[320px] border border-black p-1 rounded-lg">
+            <img src={image} className="" />
+            <p className="mt-[5px] font-bold">ECOMMERCE</p>
+            <p>Awell constructed ecommerce website using reactjs and typescript</p>
+            <a href="https://fakestore-inalas-projects.vercel.app/" target="_blank"><button className="mt-[5px] border p-1 border-black">View website</button></a>
+          </div>
+        </div>
+      </div>
+      <div id="contact">
+      <div className="flex items-center justify-center mt-6 mb-6 font-extrabold text-3xl">
+          Contact me
+        </div>
+        <div className="flex items-center justify-center p-5 flex-col gap-7">
+          <p className="font-bold text-2xl">Let's work together on your next project</p>
+          <p>Looking for a developer to help bring your project idea into reality? look no further because I've got you covered</p>
+        <div className="flex items-center gap-4">
+          <a href="https://www.instagram.com/inalajacob_16/" target="_blank"><FaInstagram size={50}/></a>
+          <a href="https://github.com/Inala726" target="_blank"><FaGithub size={50}/></a>
+          <a href="https://www.linkedin.com/in/inala-jacob-6b9664297/" target="_blank"><FaLinkedin size={50}/></a>
+          <a href="https://x.com/JacobInala68304" target="_blank"><FaXTwitter size={50}/></a>
+        </div>
+        </div>
+      </div>
     </>
   );
 };
