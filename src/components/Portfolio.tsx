@@ -23,7 +23,7 @@ const Portfolio = () => {
     <>
       <div
         id="home"
-        className="border w-[100%] h-[90vh] bg-[url('/src/assets/images/pexels-misael-garcia-832776-1707823.jpg')] bg-no-repeat bg-center bg-cover rounded-xl text-white"
+        className="border w-[100%] h-[90vh] bg-[url('/src/assets/images/pexels-misael-garcia-832776-1707823.jpg')] bg-no-repeat bg-center bg-cover rounded-xl text-white max-sm:h-[60vh]"
       >
         <div className="p-4 flex items-center justify-center gap-[100px] max-md:gap-[30px] max-sm:justify-between max-sm:px-10 w-[100%]  ">
           <div className="">
@@ -51,7 +51,7 @@ const Portfolio = () => {
             </ul>
           </div>
           <div className="">
-            <TiThMenu size={25} className=""/>
+            <TiThMenu size={25} className="hidden max-sm:block"/>
           </div>
         </div>
         <div className="text flex gap-[30px] text-center flex-col items-center justify-center mt-32 ">
@@ -143,7 +143,7 @@ const Portfolio = () => {
           <div className="w-[350px] h-[fit-content] p-2 border border-black  rounded-lg max-sm:w-[95%]">
             <img src={image} className="" />
             <p className="mt-[5px] font-bold">ECOMMERCE</p>
-            <p>Awell constructed ecommerce website using reactjs and typescript</p>
+            <p>A well constructed ecommerce website using reactjs and typescript</p>
             <a href="https://fakestore-inalas-projects.vercel.app/" target="_blank"><button className="mt-[5px] border p-1 border-black">View website</button></a>
           </div>
         </div>
