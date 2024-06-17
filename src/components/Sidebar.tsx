@@ -1,20 +1,52 @@
-import { FaSquarespace } from "react-icons/fa"
-
+import { useState } from "react";
+import { TiThMenu } from "react-icons/ti";
 
 const Sidebar = () => {
+  const [openSidebar, setOpenSidebar] = useState<boolean>(false);
+
   return (
     <>
-        <div className="w-[250px] h-[90vh] bg-white text-black border-black sticky top-0">
-            <div className="top flex w-[100%]">
-                <div className="logo flex items-center justify-between ">
-                <FaSquarespace/>
-                LOGO
-                </div>
-                <p>&times;</p>
-            </div>
+      <TiThMenu
+        size={25}
+        onClick={() => setOpenSidebar(!openSidebar)}
+        className="hidden max-sm:block"
+      />
+      {openSidebar && (
+          <div className="absolute right-4 mt-2 w-60 leading-8 bg-white rounded-md shadow-lg py-2 z-20 transition-all ease-in-out duration-500">
+            <a
+              href="#home"
+              className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+            >
+              Home
+            </a>
+            <a
+              href="#about"
+              className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+            >
+              About
+            </a>
+            <a
+              href="#skills"
+              className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+            >
+              Skills
+            </a>
+            <a
+              href="#projects"
+              className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+            >
+              Projects
+            </a>
+            <a
+              href="#contact"
+              className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+            >
+              Contact me
+            </a>
         </div>
+      )}
     </>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;

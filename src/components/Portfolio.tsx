@@ -13,9 +13,7 @@ import twind from "../assets/images/tailwindcss-logo.png";
 import picture from '../assets/images/Screenshot (2).png'
 import image from '../assets/images/Screenshot (3).png'
 import { FaGithub, FaInstagram, FaLinkedin , FaXTwitter } from "react-icons/fa6";
-import { TiThMenu } from "react-icons/ti";
-
-// const [openSidebar, setOpenSidebar] = useState<boolean>(false)
+import Sidebar from "./Sidebar";
 
 // import React from 'react'
 const Portfolio = () => {
@@ -51,7 +49,7 @@ const Portfolio = () => {
             </ul>
           </div>
           <div className="">
-            <TiThMenu size={25} className="hidden max-sm:block"/>
+        <Sidebar/>
           </div>
         </div>
         <div className="text flex gap-[30px] text-center flex-col items-center justify-center mt-32 ">
@@ -84,7 +82,7 @@ const Portfolio = () => {
             meaningfully to the tech community and to use technology to solve
             real-world challenges.
           </p>
-          <a href="">
+          <a href="https://yellow-shawna-14.tiiny.site/" target="_blank">
             <button className="border px-4 bg-slate-300 mt-7 rounded-xl hover:bg-slate-900 hover:text-white hover:transition hover:ease-in-out">
               Get resume
             </button>
@@ -134,13 +132,13 @@ const Portfolio = () => {
           My Projects
         </div>
         <div className="flex items-center justify-start p-5 gap-10 max-sm:flex-col">
-          <div className="w-[100%] h-[fit-content] p-2 border border-black  rounded-lg ">
-            <img src={picture} className="" />
+        <div className="max-sm:w-[100%] w-[400px] h-[max-content] p-2 border border-black  rounded-lg ">
+        <img src={picture} className="" />
             <p className="mt-[5px] font-bold">ICONS8 CLONE</p>
             <p>A well implemented clone of the icons8 website using HTML and CSS only</p>
             <a href="https://icons8-green.vercel.app/" target="_blank"><button className="mt-[5px] border p-1 border-black">View website</button></a>
           </div>
-          <div className="w-[100%] h-[fit-content] p-2 border border-black  rounded-lg ">
+          <div className="max-sm:w-[100%] w-[400px] h-[max-content] p-2 border border-black  rounded-lg ">
             <img src={image} className="" />
             <p className="mt-[5px] font-bold">ECOMMERCE</p>
             <p>A well constructed ecommerce website using reactjs and typescript</p>
@@ -154,7 +152,7 @@ const Portfolio = () => {
         </div>
         <div className="flex items-center justify-center p-5 flex-col gap-7">
           <p className="font-bold text-2xl">Let's work together on your next project</p>
-          <p>Looking for a developer to help bring your project idea into reality? look no further because I've got you covered</p>
+          <p>Looking for a developer to help bring your project idea into reality? look no further because I've got you covered.</p>
         <div className="flex items-center gap-4 max-ssm:flex-col">
           <a href="https://www.instagram.com/inalajacob_16/" target="_blank"><FaInstagram size={50}/></a>
           <a href="https://github.com/Inala726" target="_blank"><FaGithub size={50}/></a>
