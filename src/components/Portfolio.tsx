@@ -133,14 +133,14 @@ const Portfolio = () => {
         <div className="flex items-center justify-center mt-6 mb-6 font-extrabold text-3xl">
           My Projects
         </div>
-        <div className="flex items-center justify-start p-10 gap-10 max-sm:flex-col">
-          <div className="w-[350px] h-[fit-content] p-2 border border-black  rounded-lg max-sm:w-[95%]">
+        <div className="flex items-center justify-start p-5 gap-10 max-sm:flex-col">
+          <div className="w-[100%] h-[fit-content] p-2 border border-black  rounded-lg ">
             <img src={picture} className="" />
             <p className="mt-[5px] font-bold">ICONS8 CLONE</p>
             <p>A well implemented clone of the icons8 website using HTML and CSS only</p>
             <a href="https://icons8-green.vercel.app/" target="_blank"><button className="mt-[5px] border p-1 border-black">View website</button></a>
           </div>
-          <div className="w-[350px] h-[fit-content] p-2 border border-black  rounded-lg max-sm:w-[95%]">
+          <div className="w-[100%] h-[fit-content] p-2 border border-black  rounded-lg ">
             <img src={image} className="" />
             <p className="mt-[5px] font-bold">ECOMMERCE</p>
             <p>A well constructed ecommerce website using reactjs and typescript</p>
